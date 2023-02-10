@@ -1,38 +1,106 @@
-.App {
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #1e182c;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 10vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  flex: auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7C8097;
+  margin-left: 6px;
+  margin-bottom: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.election {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background: #D1C4E9;
+  border-radius: 10px;
+  border: 1px solid #E9D5FF;
+  padding: 20px;
+  margin: 10px 6px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.votes {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  background: #e4105d;
+  border-radius: 100%;
+  width: 20px;
+  color: #ddd;
+  font-weight: 800;
+}
+
+.thumbnail {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 1px solid #E9D5FF;
+  background: #B388FF;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.name {
+  color: #2D354A;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.title {
+  margin: 0;
+  max-width: 160px;
+  color: #7C8097;
+  font-size: .75em;
+  font-weight: 300;
+  padding-top: 0;
+  padding-bottom: .2em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  min-height: 16px;
+  text-align: center;
+}
+
+.description {
+  color: #080911;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.1em;
+  display: block;
 }
